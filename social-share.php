@@ -28,6 +28,7 @@ function register_css_styles() {
 add_shortcode('social-share', 'social_share_contents');
 
 function social_share_contents($atts) {
+    ob_start();
     wp_enqueue_style('social-share-styles');
     echo '<div class="social-btn">
         <a href="https://facebook.com/anampartho" target="_blank"><div class="social face"><i class="fa fa-facebook fa-2x"></i><span>Facebook</span></div></a>
@@ -36,4 +37,5 @@ function social_share_contents($atts) {
         <a href="#" target="_blank"><div class="social pin"><i class="fa fa-pinterest-p fa-2x"></i><span>Pinterest</span></div></a>
         <a href="#" target="_blank"><div class="social git"><i class="fa fa-github fa-2x"></i><span>Github</span></div></a>
     </div>';
+    return ob_get_clean();
 }
