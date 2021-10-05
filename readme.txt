@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: Cupid Chakma, Jehadul Islam
+Contributors: Cupid Chakma
 Donate link: https://example.com/
 Tags: tag1, tag2
 Requires at least: 4.7
